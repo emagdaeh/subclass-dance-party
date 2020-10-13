@@ -8,6 +8,7 @@ body{
   background-image: url(https://na.rdcpix.com/1608851076/041d5f431caf3c6a8fff3c06e4128418w-c219569xd-w685_h860_q80.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 body, a:link, a:visited, a:active{
@@ -53,4 +54,7 @@ body, a:link, a:visited, a:active{
 .popDancer {
   width: 100px;
   height: 300px;
+  position: absolute;
+  left: -1000px;
+  width: 50%
 }

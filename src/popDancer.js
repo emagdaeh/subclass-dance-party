@@ -2,35 +2,52 @@ var MakePopDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<img class ="popDancer" src="mJ.png">');
-  this.step();
+  this.slide();
 };
 
 MakePopDancer.prototype = Object.create(MakeDancer.prototype);
 MakePopDancer.prototype.constructor = MakePopDancer;
 
+/*
 MakePopDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
-
   this.$node.toggle();
 
 };
-
-/*
-function show_image(src, width, height, alt) {
-  var img = document.createElement("img");
-  img.src = src;
-  img.width = width;
-  img.height = height;
-  img.alt = alt;
-
-  // set the position
-  img.style.position = 'absolute';
-  img.style.top = document.body.clientHeight * Math.random() + 'px';
-  img.style.left = document.body.clientWidth * Math.random() + 'px';
-
-  document.body.appendChild(img);
-}
-document.getElementById('foo').addEventListener('click', () =>
-  show_image("http://placekitten.com/200/300", 200, 300, 'foo')
-);
 */
+MakePopDancer.prototype.slide = function() {
+  node = $('.popDancer'),
+  width = this.$node.get(0).width,
+  screenWidth = $(window).width(),
+  duration = 5000;
+
+  // function animatePopDancer() {
+  //   node.css("left", -width).animate.call({
+  //     "right": screenWidth
+  //   }, duration, animatePopDancer);
+  // }
+
+  animatePopDancer();
+};
+
+// $(function() {
+//     var img = $("#plane"),
+//         width = img.get(0).width,
+//         screenWidth = $(window).width(),
+//         duration = 5000;
+
+//     function animatePlane() {
+//         img.css("left", -width).animate({
+//             "left": screenWidth
+//         }, duration, animatePlane);
+//     }
+
+//     animatePlane();
+// });
+
+// body { overflow: hidden }
+// #plane { position: absolute; left: -1000px; width: 50% // <- not relevant for the animation }
+
+
+
+// <!-- source: https://pixabay.com/de/flugzeuge-propeller-aircraft-alt-3674305/ -->
