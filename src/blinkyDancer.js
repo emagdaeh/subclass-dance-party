@@ -20,6 +20,7 @@
 
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
   MakeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<img class ="blinkyDancer" src="/discoDancer.png">');
   this.step();
 };
 

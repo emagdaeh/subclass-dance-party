@@ -30,17 +30,17 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.container{
-  width: 100px;
-  height: 300px;
-}
-
 .hulk {
   width: 100px;
   height: 300px;
+  transition:  1.5s;
 }
 
-.container img {
-  width: 100%;
-  height: auto;
+.largeHulk {
+  transform: scale(2.5);
+}
+
+.blinkyDancer {
+  width: 100px;
+  height: 300px;
 }

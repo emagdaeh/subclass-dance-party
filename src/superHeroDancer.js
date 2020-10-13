@@ -8,9 +8,12 @@ MakeSuperHeroDancer.prototype = Object.create(MakeDancer.prototype);
 MakeSuperHeroDancer.prototype.constructor = MakeSuperHeroDancer;
 
 MakeSuperHeroDancer.prototype.step = function() {
-  //MakeDancer.prototype.step.call(this);
+  MakeDancer.prototype.step.call(this);
 
-  this.$node.toggle();
+  this.$node.toggleClass('largeHulk');
+
+  // this.$node.toggle();
+
   // setTimeout(function() {
   //   step.call(MakeDancer.prototype);
   //   //this.$node.toggle();
