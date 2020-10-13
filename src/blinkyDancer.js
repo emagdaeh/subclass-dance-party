@@ -19,7 +19,6 @@
 // };
 
 var MakeBlinkyDancer = function(top, left, timeBetweenSteps) {
-  this.timeBetweenSteps = timeBetweenSteps;
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.step();
 };
