@@ -1,6 +1,7 @@
 var MakePopDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   MakeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<img class ="popDancer" src="mJ.png">');
   this.step();
 };
 
