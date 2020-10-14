@@ -33,7 +33,7 @@ body, a:link, a:visited, a:active{
 .dancer{
   border:10px solid red;
   border-radius:10px;
-  position:absolute;
+  /* position:center; */
 }
 
 .hulk {
@@ -52,9 +52,9 @@ body, a:link, a:visited, a:active{
 }
 
 .popDancer {
-  width: 100px;
+  width: 200px;
   height: 300px;
-  position: absolute;
-  left: -1000px;
-  width: 50%
+  top: 1000px;
+  /* position: center; */
+  /* left: -1000px; */
 }

@@ -2,33 +2,36 @@ var MakePopDancer = function(top, left, timeBetweenSteps) {
   this.timeBetweenSteps = timeBetweenSteps;
   MakeDancer.call(this, top, left, timeBetweenSteps);
   this.$node = $('<img class ="popDancer" src="mJ.png">');
-  this.slide();
+  this.step();
 };
 
 MakePopDancer.prototype = Object.create(MakeDancer.prototype);
 MakePopDancer.prototype.constructor = MakePopDancer;
 
-/*
+
 MakePopDancer.prototype.step = function() {
   MakeDancer.prototype.step.call(this);
   this.$node.toggle();
 
 };
-*/
-MakePopDancer.prototype.slide = function() {
-  node = $('.popDancer'),
-  width = this.$node.get(0).width,
-  screenWidth = $(window).width(),
-  duration = 5000;
 
-  // function animatePopDancer() {
-  //   node.css("left", -width).animate.call({
-  //     "right": screenWidth
-  //   }, duration, animatePopDancer);
-  // }
+// MakePopDancer.prototype.slide = function() {
+// $(function() {
+//   this.node = $('.popDancer'),
+//   width = this.$node.get(0).width,
+//   screenWidth = $(window).width(),
+//   duration = 5000;
 
-  animatePopDancer();
-};
+//   function animatePopDancer() {
+//     this.node.css("left", -width).animate.call({
+//       "right": screenWidth
+//     }, duration, animatePopDancer);
+//   }
+
+//   animatePopDancer();
+// });
+
+
 
 // $(function() {
 //     var img = $("#plane"),
